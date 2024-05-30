@@ -12,6 +12,26 @@
         button:active {
             background-color: yellow;
         }
+        .flex-container{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #333;
+        }
+        .menu a:hover {
+            color: #ffcc00;
+        }
 
     </style>
     <head>
@@ -19,6 +39,15 @@
         <meta name="viewport" content="width=device-width initial-scale=1">
     </head>
     <body>
+        <div class="flex-container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="Projectabout.html">About</a></li>
+                    <li><a href="Projectcontact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <div>
             <fieldset class="container">
                 <legend>CONTACT US</legend>
@@ -32,5 +61,6 @@
                 <button>SUBMIT</button>
             </fieldset>
         </div>
+        <p>Back to home page <a href="Homepage.html">click me</a></p>
     </body>
 </html>
